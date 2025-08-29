@@ -1,0 +1,195 @@
+:root {
+  --bg-color-light: #f0f2f5;
+  --bg-color-dark: #181818;
+  --text-color-light: #222;
+  --text-color-dark: #f0f2f5;
+  --primary-color: #332538;
+  --danger-color: #e53935;
+  --filter-button-color: #6a7680;
+  --filter-button-hover: #1c2934;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  font-family: "Segoe UI", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.todo-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background:rgb(191, 145, 145);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .todo-container {
+  background: #282c34;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+header input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+header button {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#add-task {
+  background-color: var(--primary-color);
+}
+
+#add-task:hover {
+  background-color: #388e3c;
+}
+
+.plus-icon {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  background-color: #555;
+}
+
+#theme-toggle:hover {
+  background-color: #333;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+body.dark-mode ul#task-list li {
+  background: #3c4048;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-btn svg {
+  fill: #e53935; 
+  width: 20px;
+  height: 20px;
+}
+
+.delete-btn:hover svg {
+  fill: #c62828; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--filter-button-color);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer button:hover {
+  background-color: var(--filter-button-hover);
+}
+
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.due-date {
+  font-size: 12px;
+  color: #888;
+  margin-left: 10px;
+}
+
+.edit-btn img,
+.delete-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#settings-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#settings-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#settings-btn:hover #settings-icon {
+  filter: brightness(0.8);
+}
+
+

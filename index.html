@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <header>
+            <input type="text" id="new-task" placeholder="Enter a new task..." />
+            
+            <button id="settings-btn" title="Settings">
+                <img id="settings-icon" src="img/settings.png" alt="Settings" width="24" />
+            </button>
+
+            <input type="date" id="due-date" />
+<button id="add-task"> + </button>
+        </header>
+
+        <ul id="task-list">
+        </ul>
+
+        <footer>
+            <button id="filter-all">All</button>
+            <button id="filter-completed">Completed</button>
+            <button id="filter-pending">Pending</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
