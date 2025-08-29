@@ -32,6 +32,7 @@ This project is a **To do list web Application** that allows users to manage the
 - All tasks and their statuses persist using **LocalStorage**.
 - Data remains after page reload.
 
+## JS confetti
 
 ## 🛠️ Technologies Used
 - HTML
