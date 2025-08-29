@@ -40,5 +40,5 @@ This project is a **To do list web Application** that allows users to manage the
 - LocalStorage for data persistence
 
 ## Demo
-[()
+[(https://jagruti02sgu.github.io/Frontend-Tasks/)]
 ---
